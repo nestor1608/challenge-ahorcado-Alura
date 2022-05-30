@@ -1,0 +1,64 @@
+#soporte{
+    position: absolute;
+    justify-items: flex-end;
+    width: 294;
+    height: 5px;
+    top: 100%;
+}
+#barra{
+    position: absolute;
+    height: 360px;
+    width: 4.5px;
+    left: 21%;
+}
+#barraCabeza{
+    position: absolute;
+    width: 178px;
+    height: 4.5px;
+    top: 0%;
+    left: 21%;
+}
+#sotenCabeza{
+    position: absolute;
+    width: 4.5px;
+    height: 49.5px;
+    top: 0% ;
+    left:81% ;
+}
+#cabeza{
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    top:13%;
+    left:71.5% ;
+}
+#cuerpo{
+    position: absolute;
+    width: 4.5px;
+    height: 135px;
+    top:30%;
+    left:81% ;
+}
+#piernaIz{
+    position: absolute;
+    left: 69%;
+    top:67%
+}
+#piernaDr{
+    position: absolute;
+    top: 67%;
+    left: 81%;
+}
+#brazoIz{
+    position: absolute;
+    left: 69% ;
+    top:32% ;
+}
+#brazoDr{
+    position: absolute;
+    top:32% ;
+    left: 81%;
+}
+.fadeOutImg{
+    display: none;
+}
