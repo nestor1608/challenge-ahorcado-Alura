@@ -176,5 +176,8 @@ li{
         top:0;
         left: 13%;
     }
+    input::placeholder{
+        font-size:large;
+    }
 
 }

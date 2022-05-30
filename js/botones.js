@@ -38,16 +38,35 @@ function inicioJuego(){
 var newJuego = document.querySelector("#new")
 var denuevo = document.querySelector("#denuevo")
 denuevo.addEventListener('click',()=>{
-    location.reload()
+    volverInicio();
+    vaciar();
 })
 newJuego.addEventListener("click",()=>{
-    location.reload()
+    volverInicio();
+    vaciar()
 })
 var btnCancelar= document.querySelector("#cancelar")
 btnCancelar.addEventListener("click", ()=>{
-    location.reload()
+    volverInicio();
+    vaciar()
 })
-
+function volverInicio(){
+    tagInicio = document.querySelector("#ahorcado").classList.add("fadeOut");
+    botones = document.querySelector("#botones").classList.add("fadeOut");
+    palAgregar = document.querySelector("#agregar").classList.add("fadeOut");
+    info = document.querySelector("#info").classList.add("fadeOut");
+    palabra = document.querySelector("#palabra").classList.add("fadeOut");
+    btnJuego = document.querySelector("#botonesJuego").classList.add("fadeOut");
+    btnInicio = document.querySelector("#botonesInicio").classList.remove("fadeOut");
+    ganado = document.querySelector("#finJuegoG").classList.add("fadeOut");
+    msjPerdido = document.querySelector("#finJuegoP").classList.add("fadeOut");
+    btnDeNuevo =document.querySelector("#denuevo").classList.add("fadeOut");
+    
+}
+function vaciar(){
+    var ul = document.querySelector("#correctPalabra").innerHTML = "";
+    letraErradas = [];
+}
 // ---------------BTN NUEVA PALABRA COMENZAR----------
 var btnAgregarComenzar = document.querySelector("#guardar")
 

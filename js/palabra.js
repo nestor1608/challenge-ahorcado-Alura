@@ -35,13 +35,11 @@ function msjGanado(){
     var msjGanado = document.querySelectorAll(".str")
     
     if (msjGanado.length == 0 ){
-        var ahorcado = document.querySelector("#ahorcado");
-        ahorcado.classList.add("fadeOut");
-        var palabra = document.querySelector("#palabra");
-        palabra.classList.add("fadeOut");
-        var ganado = document.querySelector("#finJuegoG")
-        ganado.classList.remove("fadeOut")
-        console.log("ganaste")
+        ahorcado = document.querySelector("#ahorcado").classList.add("fadeOut");
+        palabra = document.querySelector("#palabra").classList.add("fadeOut");
+        ganado = document.querySelector("#finJuegoG").classList.remove("fadeOut")
+        btnjuego= document.querySelector("#botonesJuego").classList.add("fadeOut");
+        btnDeNuevo =document.querySelector("#denuevo").classList.remove("fadeOut");
     }
     }
 
