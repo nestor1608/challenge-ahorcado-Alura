@@ -8,8 +8,11 @@ agregarPal.addEventListener("click",()=>{
 })
 
 btnInicio.addEventListener("click",()=>{
-    desaparecer()
-    inicioJuego()
+    desaparecer();
+    inicioJuego();
+    var div = document.querySelector("#cadena");
+    div.innerHTML= "";
+    reiniciarMuñeco();
 })
 
 function desaparecer(){
@@ -38,8 +41,7 @@ function inicioJuego(){
 var newJuego = document.querySelector("#new")
 var denuevo = document.querySelector("#denuevo")
 denuevo.addEventListener('click',()=>{
-    volverInicio();
-    vaciar();
+    location.reload();
 })
 newJuego.addEventListener("click",()=>{
     volverInicio();
@@ -67,6 +69,8 @@ function vaciar(){
     var ul = document.querySelector("#correctPalabra").innerHTML = "";
     letraErradas = [];
 }
+
+
 // ---------------BTN NUEVA PALABRA COMENZAR----------
 var btnAgregarComenzar = document.querySelector("#guardar")
 

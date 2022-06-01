@@ -21,19 +21,21 @@ function agregarPalabra(event,palabra){
 // ---------IR MOSTRANDO EL AHORCADO MIENTRAS VA ERRANDO------
 function mostrarAhorcado (){
     var imagenes = document.querySelectorAll(".fadeOutImg");
-    if(imagenes.length > 0){
+    console.log(imagenes)
+    if(imagenes.length >= 1){
         imagenes[0].classList.remove("fadeOutImg")
     }else{
         msjPerdida();
+        
         console.log("Ah perdido.. Intentelo nuevamente")
     }
+    
 }
 
 // --------------------------APARECER MSJ PERDIDO O GANADO--------
 
 function msjGanado(){
     var msjGanado = document.querySelectorAll(".str")
-    
     if (msjGanado.length == 0 ){
         ahorcado = document.querySelector("#ahorcado").classList.add("fadeOut");
         palabra = document.querySelector("#palabra").classList.add("fadeOut");
