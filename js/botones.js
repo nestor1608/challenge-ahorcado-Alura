@@ -12,7 +12,6 @@ btnInicio.addEventListener("click",()=>{
     inicioJuego();
     var div = document.querySelector("#cadena");
     div.innerHTML= "";
-    reiniciarMuñeco();
 })
 
 function desaparecer(){
