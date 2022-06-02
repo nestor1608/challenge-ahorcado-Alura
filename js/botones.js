@@ -44,8 +44,7 @@ denuevo.addEventListener('click',()=>{
     location.reload();
 })
 newJuego.addEventListener("click",()=>{
-    volverInicio();
-    vaciar()
+    location.reload();
 })
 var btnCancelar= document.querySelector("#cancelar")
 btnCancelar.addEventListener("click", ()=>{
@@ -70,7 +69,21 @@ function vaciar(){
     letraErradas = [];
 }
 
-
+// function reiniciarMuñeco(){
+//     var muñeco = []
+//     var img = document.querySelectorAll("img")
+//     for(var i = 0; i< img.length; i++){
+//         if (img[i].id == "soporte" || img[i].id == "img-logo"|| img[i].id == "img-info" ){
+//         }else{
+//             muñeco.push(img[i])
+//         }
+//     }
+//     for(var e = 0; e < muñeco.length;e++){
+//         muñeco[e].classList.add("fadeOutImg")
+//     }
+//     var letraErradas = []
+//     return letraErradas
+// }
 // ---------------BTN NUEVA PALABRA COMENZAR----------
 var btnAgregarComenzar = document.querySelector("#guardar")
 
